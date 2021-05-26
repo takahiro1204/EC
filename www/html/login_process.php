@@ -24,7 +24,7 @@ if (is_valid_csrf_token($token)) {
   }
 
   set_message('ログインしました。');
-  if ($user['type'] === USER_TYPE_ADMIN) {
+  if ((int)$user['type'] === USER_TYPE_ADMIN) {
     redirect_to(ADMIN_URL);
   }
 } else {
