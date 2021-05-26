@@ -178,7 +178,7 @@ function delete_item($db, $item_id)
 
 function is_open($item)
 {
-  return $item['status'] === 1;
+  return (int)$item['status'] === 1;
 }
 
 function validate_item($name, $price, $stock, $filename, $status)
