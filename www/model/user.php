@@ -66,7 +66,7 @@ function regist_user($db, $name, $password, $password_confirmation)
 
 function is_admin($user)
 {
-  return $user['type'] === USER_TYPE_ADMIN;
+  return (int)$user['type'] === USER_TYPE_ADMIN;
 }
 
 function is_valid_user($name, $password, $password_confirmation)
