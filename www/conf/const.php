@@ -5,7 +5,7 @@ define('VIEW_PATH', $_SERVER['DOCUMENT_ROOT'] . '/view/');
 
 
 define('IMAGE_PATH', '/html/assets/images/');
-define('STYLESHEET_PATH', '/assets/css/');
+define('STYLESHEET_PATH', '/html/assets/css/');
 define('IMAGE_DIR', $_SERVER['DOCUMENT_ROOT'] . '/html/assets/images/' );
 
 define('DB_HOST', 'mysql1.php.xdomain.ne.jp');
